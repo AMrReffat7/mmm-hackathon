@@ -1,0 +1,445 @@
+@font-face {
+  font-family: "Impact";
+  src: url("/CSS/impact/impact.ttf") format("truetype");
+  font-weight: 100 !important;
+}
+
+@font-face {
+  font-family: "Digital7";
+  src: url("./digital-7/digital-7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ARCADECLASSIC";
+  src: url("./arcadeclassic/ARCADECLASSIC.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00a3c4;
+  border-radius: 10px;
+  border: 3px solid #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #008c99;
+}
+
+body {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgb(9, 27, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 27, 41, 1) 22%,
+    rgba(16, 79, 96, 1) 100%
+  );
+}
+nav {
+  background: rgba(9, 27, 41, 0.333);
+}
+.arcadeclassic {
+  font-family: "ARCADECLASSIC", sans-serif;
+}
+.nav-item {
+  text-align: center !important;
+}
+.nav-item .NavLink {
+  padding: 5px 25px !important;
+  background-color: transparent;
+  border: 2px solid #23aace;
+  color: #23aace !important;
+  border-radius: 25px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.active {
+  background-color: #23aace !important;
+  color: #fff !important;
+}
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  margin-top: 10px;
+}
+.Home,
+.About {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around !important;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.About{
+}
+.Home {
+  background-image: url(../Image/HomeBg.webp);
+  background-position: center;
+  background-size: cover;
+}
+.HomeInfo img {
+  width: 350px;
+}
+.HomeInfo p {
+  padding: 7px 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 20px;
+
+  font-weight: 800;
+  text-align: center;
+}
+.HomeInfo h2 {
+  font-family: "Impact", sans-serif;
+}
+.HomeInfo p i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.Home .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.Home .time .date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around !important;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.Home .time .Register {
+  display: flex;
+  align-items: center;
+}
+.Home .time .Register a {
+  padding: 10px 30px;
+  font-size: 30px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.Home .time .dateTime {
+  padding: 20px 30px;
+  border: 3px solid #fff;
+  border-radius: 21px;
+  width: 160px;
+  position: relative;
+}
+.done {
+  transition: 2s all ease-in;
+  display: none;
+  background-color: line;
+}
+
+.Home .time .dateTime p {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Digital7", sans-serif;
+}
+.Home .time .dateTime span {
+  position: absolute;
+  top: -35px;
+  font-size: 20px;
+  padding: 0 10px;
+
+  right: 50%;
+  transform: translate(50%, 50%);
+
+  background-color: #104f60; /* Background color for the span */
+  color: #fff; /* Text color for the span */
+  border-radius: 12px; /* Optional: rounded corners for the span */
+  padding: 10px;
+  line-height: 1; /* Adjust line-height for better alignment */
+}
+
+.About .AboutInfo img {
+  width: 500px;
+  z-index: 454585;
+}
+
+.About .title {
+  background-color: #23aace;
+  color: #fff;
+  padding: 30px 20px;
+  width: 500px;
+  border-radius: 25px;
+}
+
+.About .title p {
+  margin-top: 20px;
+  text-align: start;
+}
+
+.ParTners {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+  text-align: center;
+  margin: 50px 0;
+  gap: 40px;
+  height: 100vh;
+}
+
+.ParTners .AboutInfo img {
+  width: 500px;
+}
+
+.ParTners .title {
+  color: #fff;
+  padding: 30px 20px;
+  width: 500px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+}
+
+.ParTners .title p {
+  margin-top: 20px;
+  text-align: start;
+}
+
+.timeLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeLine img {
+  width: 80%;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 100vh;
+}
+.map {
+  position: relative;
+}
+.map iframe {
+  border-radius: 50px;
+  width: 600px;
+}
+.map .icons {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  background-color: #008c99;
+  padding: 20px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.formContact {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  gap: 30px;
+}
+.formContact .formControl {
+  width: 90%;
+  text-align: center;
+  position: relative;
+  border-radius: 50px;
+  border: 4px solid #fff;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+.formContact .formControl .icons {
+  background-color: #008c99;
+  padding: 20px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.formContact .formControl input {
+  width: 80%;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 25px;
+  color: #fff;
+}
+
+.accordion {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.accordion-button {
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.accordion-item button {
+  width: 100%;
+  padding: 12px;
+  font-size: 19px;
+  border: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #00acc1;
+}
+
+.accordion-item {
+  background-color: #1a2736;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 15px;
+  width: 30%;
+}
+
+.accordion-body {
+  background-color: #1a2736;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  .nav-item .NavLink {
+    display: none;
+  }
+  .navDiv {
+    justify-content: center !important;
+  }
+  .Home,
+  .About {
+    justify-content: center;
+    gap: 20px;
+    height: fit-content;
+    padding: 35px 0;
+  }
+  .contacts {
+    gap: 50px;
+    margin-bottom: 50px;
+    height: fit-content;
+  }
+  .accordion {
+    flex-wrap: wrap;
+  }
+  .accordion-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .accordion-item {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .About .title,
+  .ParTners .title {
+    width: 90%;
+  }
+  .About .AboutInfo img,
+  .ParTners .AboutInfo img {
+    width: 90%;
+  }
+
+  .timeLine {
+    width: 100%;
+    height: fit-content;
+
+    padding: 30px;
+  }
+  .timeLine img {
+    width: 100%;
+  }
+  .map {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .map iframe {
+    border-radius: 50px;
+    width: 90%;
+  }
+
+  .formContact .formControl .icons {
+    padding: 17px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .HomeInfo img {
+    width: 300px;
+  }
+  .HomeInfo {
+    margin: 60px 0px;
+  }
+  .HomeInfo p {
+    padding: 8px;
+    margin: 0 5px;
+  }
+  .Home .time {
+    margin: 0 5px;
+    gap: 30px;
+  }
+}
