@@ -1,5 +1,5 @@
 
-let countDownDate = new Date("sep 23, 2024 09:00:00").getTime();
+let countDownDate = new Date("sep 24, 2024 09:00:00").getTime();
 let Day = document.getElementById("DAYS");
 let MINTES = document.getElementById("MINTES");
 
